@@ -115,12 +115,12 @@ export const SystemVariables = ({
           <DataField
             title="Estimated chance of being in the active set"
             info="Probability of getting selected in the reward set (active and standby nodes) in the next epoch. The more your stake, the higher the chances to be selected"
-            Indicator={<PercentIndicator value={inclusionProbability.in_active} />}
+            Indicator={<>{inclusionProbability.in_active}</>}
           />
           <DataField
             title="Estimated chance of being in the standby set"
             info="Probability of getting selected in the reward set (active and standby nodes) in the next epoch. The more your stake, the higher the chances to be selected"
-            Indicator={<PercentIndicator value={inclusionProbability.in_reserve} />}
+            Indicator={<>{inclusionProbability.in_reserve}</>}
           />
 
           <DataField
