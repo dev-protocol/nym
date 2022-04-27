@@ -10,14 +10,26 @@ use std::{fmt, sync::Arc};
 use tokio::sync::RwLock;
 
 #[cfg_attr(test, derive(ts_rs::TS))]
-#[cfg_attr(test, ts(export, export_to = "../src/types/rust/validatorurls.ts"))]
+#[cfg_attr(
+  test,
+  ts(
+    export,
+    export_to = "../../ts-packages/types/src/types/rust/ValidatorUrls.ts"
+  )
+)]
 #[derive(Serialize, Deserialize)]
 pub struct ValidatorUrls {
   pub urls: Vec<String>,
 }
 
 #[cfg_attr(test, derive(ts_rs::TS))]
-#[cfg_attr(test, ts(export, export_to = "../src/types/rust/validatorurls.ts"))]
+#[cfg_attr(
+  test,
+  ts(
+    export,
+    export_to = "../../ts-packages/types/src/types/rust/ValidatorUrls.ts"
+  )
+)]
 #[derive(Debug, Serialize, Deserialize)]
 pub struct Validator {
   pub nymd_url: String,
