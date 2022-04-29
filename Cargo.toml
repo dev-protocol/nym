@@ -50,6 +50,7 @@ members = [
     "common/socks5/proxy-helpers",
     "common/socks5/requests",
     "common/topology",
+    "common/types",
     "common/wasm-utils",
     "explorer-api",
     "gateway",
